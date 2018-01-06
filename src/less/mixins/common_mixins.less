@@ -1,0 +1,30 @@
+.imagetmpl(@url){
+	max-width:image-width(@url)*0.5;
+	max-height:image-height(@url)*0.5;
+}
+.row3(@th;@bh;){
+	height:100%;
+	position:relative;
+	overflow:hidden;
+	.top{
+		height:@th;
+		position:absolute;
+		left:0;
+		right:0;
+	}
+	.main{
+		position:absolute;
+		left:0;
+		right:0;
+		overflow:hidden;
+		top:@th;
+		bottom:@bh;
+	}
+	.bottom{
+		height:@bh;
+		position:absolute;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+}

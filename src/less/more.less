@@ -1,0 +1,27 @@
+@import (once, reference) 'mixins/variables.less';
+@import (once, reference) 'global.less';
+@import (once, reference) 'common.less';
+.topTab{
+	.fix();
+	.tab:extend(.p10,.tl14,.l){
+		float: left;
+		border: 1px solid #090;
+	};
+}
+.leftTab{
+	.tab:extend(.p10,.lb3a14){
+		border: 1px solid #090;
+	};
+	flex:none;
+	-webkit-flex:none;
+}
+.contentOuter:extend(.rel){
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+}
+.contentInner{
+	border: 1px solid #090;
+	flex:1;
+	-webkit-flex:1;
+}

@@ -1,0 +1,45 @@
+.topTab .tab {
+  float: left;
+}
+.contentOuter {
+  position: relative;
+}
+.topTab .tab,
+.leftTab .tab {
+  padding: 10px;
+}
+.topTab {
+  *zoom: 1;
+}
+.topTab:before,
+.topTab:after {
+  content: '';
+  overflow: hidden;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+  display: block;
+}
+.topTab .tab {
+  float: left;
+  border: 1px solid #090;
+}
+.leftTab {
+  flex: none;
+  -webkit-flex: none;
+}
+.leftTab .tab {
+  border: 1px solid #090;
+}
+.contentOuter {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+}
+.contentInner {
+  border: 1px solid #090;
+  flex: 1;
+  -webkit-flex: 1;
+}
+/*# sourceMappingURL=more.css.map */
